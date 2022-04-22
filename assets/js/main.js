@@ -12,3 +12,10 @@ function subscribeModal() {
 function subscribeModalHidden() {
   subscribe.classList.add('hidden');
 }
+
+document.body.addEventListener('click', subscribeModalHidden);
+document.body.addEventListener('keydown',function(e) {
+  if (e.key === 'Escape') {
+    subscribeModalHidden()
+  }
+})

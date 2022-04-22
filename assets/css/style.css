@@ -325,11 +325,13 @@ footer > p:last-of-type {
   margin-bottom: 15vh;
 }
 
+.subscribe form input[type='submit']:hover {
+  background-color: #3C30FF;
+}
+
+
+
 
 .hidden {
   display: none;
-}
-
-.visible {
-  display: block;
 }
