@@ -101,10 +101,10 @@ header article a {
 
 header img {
   position: absolute;
-  top: 5vh;
-  right: 10vh;
-  width: 50%;
-  animation: animation 5s linear;
+  top: 0vh;
+  right: 0;
+  width: 60%;
+  animation: animation 2.5s linear;
 }
 
 /* ===============================================================
@@ -343,9 +343,9 @@ footer > p:last-of-type {
 
 @keyframes animation {
   from {
-    top: 0vh;
+    top: -10vh;
   }
   to {
-    top: 5vh;
+    top: 0vh;
   }
 }
