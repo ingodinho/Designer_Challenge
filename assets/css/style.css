@@ -59,7 +59,7 @@ img[alt='logo'] {
 ================================================================== */
 
 header {
-  background: url('../img/ilustracion_people.png') right top / 50% no-repeat,  url('../img/ilustracion1.png') right top / 50% no-repeat;
+  background:  url('../img/ilustracion1.png') right top / 50% no-repeat;
   padding: 0 10%;
 }
 
@@ -76,9 +76,9 @@ header nav p {
 }
 
 header article {
-  width: 50%;
-  padding: 15vh 0 10vh 0;
-  margin: 0 0 0 5%;
+  padding: 15vh 10% 10vh 0;
+  margin: 0 0 10vh 5%;
+  width: 60%;
 }
 
 header article h2 {
@@ -97,6 +97,14 @@ header article a {
   font-weight: 600;
   text-decoration: none;
   color: #ff3571;
+}
+
+header img {
+  position: absolute;
+  top: 5vh;
+  right: 10vh;
+  width: 50%;
+  animation: animation 5s linear;
 }
 
 /* ===============================================================
@@ -137,7 +145,6 @@ header article a {
 /* ===============================================================
                         SECTION STYLES STEPS
 ================================================================== */
-
 
 .section_steps {
   padding: 20vh 10% 20vh 10%;
@@ -329,9 +336,16 @@ footer > p:last-of-type {
   background-color: #3C30FF;
 }
 
-
-
-
 .hidden {
   display: none;
+}
+
+
+@keyframes animation {
+  from {
+    top: 0vh;
+  }
+  to {
+    top: 5vh;
+  }
 }
